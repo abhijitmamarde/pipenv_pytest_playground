@@ -1,0 +1,3 @@
+.pytest_cache/*
+# check .sample_env file for reference
+.env

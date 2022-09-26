@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+loguru = "*"
+baker = "*"
+pytest = "*"
+black = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+env = "python -c \"import os; print(f'''HELLO={os.environ.get('HELLO', '')}\nHOME={os.environ.get('HOME', '')}''')\""
+format = "black ."
+test = "pytest"
